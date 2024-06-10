@@ -13,7 +13,7 @@ def detect_sensitive_info(prompt):
         "CPR": r"\b\d{6}-\d{4}\b",
         "Phone": r"\b\d{2,4}[-\s]?\d{2,4}[-\s]?\d{2,4}\b",
         "Email": r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b",
-        "Address": r"\b\d{1,3}\s[A-Za-z]{1,}\s[A-Za-z]{1,}\b",
+        "Address_US": r"\b\d{1,3}\s[A-Za-z]{1,}\s[A-Za-z]{1,}\b",
         "Address_DK":r"\b[A-Za-zæøåÆØÅ]+(?:\s[A-Za-zæøåÆØÅ]+)*\s\d{1,3}(?:\s?[A-Za-zæøåÆØÅ]*\s?\d*\.?\s?[A-Za-z]*)?\b"
     }
 
